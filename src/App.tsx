@@ -5,10 +5,10 @@ const App = () => {
   // console.log(medicines.map((item) => item.name));
   return (
     <>
-      <h1 className="bg-green-500 text-center py-3 font-bold text-2xl text-white mb-4">
+      <h1 className="bg-green-500 text-center py-3 font-bold text-2xl text-white font-mono">
         Medicine List
       </h1>
-      <div className="flex flex-wrap gap-6 justify-center">
+      <div className="flex flex-wrap gap-6 justify-center my-4">
         {medicines.map((item) => {
           return (
             <div
@@ -16,7 +16,7 @@ const App = () => {
               className="border border-gray-500 p-4 rounded-lg max-w-[300px]"
             >
               <section className="">
-                <h2 className="text-gray-400 uppercase text-sm">
+                <h2 className="text-gray-400 uppercase text-sm font-mono tracking-[1px]">
                   Medicine Name
                 </h2>
                 <p className="font-bold my-2">{item.name}</p>
@@ -33,7 +33,9 @@ const App = () => {
                 </p>
                 <hr className="my-2 bg-gray-400" />
 
-                <h2 className="text-gray-400 uppercase text-sm">Description</h2>
+                <h2 className="text-gray-400 uppercase text-sm font-mono tracking-[1px]">
+                  Description
+                </h2>
                 <p className="text-[14px] text-gray-500 mb-2">
                   {item.description}
                 </p>
@@ -62,7 +64,7 @@ const App = () => {
                 </div>
                 <hr className="my-4 bg-gray-400" />
                 {/* catagory */}
-                <h2 className="text-gray-400 uppercase text-sm mb-1">
+                <h2 className="text-gray-400 uppercase text-sm mb-1 font-mono tracking-[1px]">
                   catagory
                 </h2>
                 <p>{item.category}</p>
@@ -70,7 +72,7 @@ const App = () => {
                 <hr className="my-4 bg-gray-400" />
                 {/* manufacturer */}
                 <section>
-                  <h2 className="text-gray-400 uppercase text-sm mb-1">
+                  <h2 className="text-gray-400 uppercase text-sm mb-1 font-mono tracking-[1px]">
                     manufacturer
                   </h2>
                   <div className="flex gap-2">
@@ -83,7 +85,7 @@ const App = () => {
 
                 {/* Dosage */}
                 <section>
-                  <h2 className="text-gray-400 uppercase text-sm mb-1">
+                  <h2 className="text-gray-400 uppercase text-sm mb-1 font-mono tracking-[1px]">
                     dosage
                   </h2>
                   <div className="flex gap-2">
@@ -95,7 +97,7 @@ const App = () => {
                 <hr className="my-4 bg-gray-400" />
 
                 <section>
-                  <h2 className="text-gray-400 uppercase text-sm mb-1">
+                  <h2 className="text-gray-400 uppercase text-sm mb-1 font-mono tracking-[1px]">
                     subMedicines
                   </h2>
                   <div className="flex flex-col gap-3">
@@ -127,7 +129,7 @@ const App = () => {
 
                 {/* Review */}
                 <section>
-                  <h2 className="text-gray-400 uppercase text-sm mb-1">
+                  <h2 className="text-gray-400 uppercase text-sm mb-1 font-mono tracking-[1px]">
                     reviews
                   </h2>
                   <div className="flex flex-col gap-3">
@@ -160,7 +162,9 @@ const App = () => {
 
                 {/* tags */}
                 <section>
-                  <h3 className="text-gray-400 uppercase text-sm mb-1">tags</h3>
+                  <h3 className="text-gray-400 uppercase text-sm mb-1 font-mono tracking-[1px]">
+                    tags
+                  </h3>
                   <div className="flex gap-5">
                     {item.tags.map((item, i) => {
                       return (
