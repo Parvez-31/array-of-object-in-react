@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        mono: ["Intel One Mono", monospace],
+        mono: ["Intel One Mono", "monospace"],
       },
     },
   },

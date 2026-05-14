@@ -10,14 +10,14 @@ interface Dosage {
   frequency: string;
 }
 
-interface SubMedicine {
+export interface SubMedicine {
   id: number;
   name: string;
   price: number;
   quantity: string;
 }
 
-interface Review {
+export interface Review {
   id: number;
   user: string;
   rating: number;
